@@ -1,0 +1,22 @@
+display_information:
+  name: Decider
+  description: Can't choose? Type /decide with a comma-separated list and Decider picks one for the channel.
+  background_color: "#4a154b"
+features:
+  bot_user:
+    display_name: Decider
+    always_online: false
+  slash_commands:
+    - command: /decide
+      url: https://YOUR-APP.onrender.com/slack/decide
+      description: Randomly pick one option from a list
+      usage_hint: pizza, tacos, sushi
+      should_escape: false
+oauth_config:
+  scopes:
+    bot:
+      - commands
+settings:
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
